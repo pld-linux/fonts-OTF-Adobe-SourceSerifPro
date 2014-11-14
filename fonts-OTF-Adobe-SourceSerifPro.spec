@@ -1,5 +1,6 @@
 # NOTE: there are also TTF fonts in tarball
 Summary:	Adobe Source Serif Pro - A set of OpenType fonts for coders
+Summary(pl.UTF-8):	Adobe Source Serif Pro - zestaw fontów OpenType dla programistów
 Name:		fonts-OTF-Adobe-SourceSerifPro
 Version:	1.014
 Release:	1
@@ -9,7 +10,6 @@ Source0:	https://github.com/adobe-fonts/source-serif-pro/archive/%{version}R.tar
 # Source0-md5:	4d803f5c10ee6b1214d5a0a32e1fe82d
 Source1:	%{name}-fontconfig.conf
 URL:		https://github.com/adobe-fonts/source-serif-pro
-BuildRequires:	unzip
 Requires(post,postun):	fontpostinst
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -17,7 +17,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         otffontsdir     %{_fontsdir}/OTF
 
 %description
-Source Serif Pro is a set of OpenType fonts to complement the Source Sans Pro family.
+Source Serif Pro is a set of OpenType fonts to complement the Source
+Sans Pro family.
+
+%description -l pl.UTF-8
+Source Serif Pro to zestaw fontów szeryfowych w formacie OpenType,
+uzupełniających rodzinę Source Sans Pro.
 
 %prep
 %setup -q -n source-serif-pro-%{version}R
