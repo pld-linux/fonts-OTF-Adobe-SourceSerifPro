@@ -2,12 +2,12 @@
 Summary:	Adobe Source Serif Pro - A set of OpenType fonts for coders
 Summary(pl.UTF-8):	Adobe Source Serif Pro - zestaw fontów OpenType dla programistów
 Name:		fonts-OTF-Adobe-SourceSerifPro
-Version:	1.014
+Version:	1.017
 Release:	1
 License:	OFL v1.1
 Group:		Fonts
 Source0:	https://github.com/adobe-fonts/source-serif-pro/archive/%{version}R.tar.gz
-# Source0-md5:	4d803f5c10ee6b1214d5a0a32e1fe82d
+# Source0-md5:	fee6b5d1fe3b21621b14fe342c32a398
 Source1:	%{name}-fontconfig.conf
 URL:		https://github.com/adobe-fonts/source-serif-pro
 Requires(post,postun):	fontpostinst
